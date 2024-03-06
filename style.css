@@ -1,0 +1,78 @@
+
+h1 {
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: 2em;
+}
+  
+.contenido {
+    max-width: 600px;
+    margin: 0 auto;
+}
+  
+.pregunta {
+    background-color: transparent;
+    border: 1px solid #9fa4a8;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+  
+.pregunta.activo {
+    background-color: #f1faff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+    
+.pregunta-titulo {
+    margin: 0 35px 0 0;
+}
+  
+.pregunta-texto {
+    display: none;
+    margin: 30px 0 0;
+}
+  
+.pregunta.activo .pregunta-texto {
+    display: block;
+}
+  
+.pregunta-desplegable {
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+}
+  
+.pregunta-desplegable:focus {
+    outline: 0;
+}
+  
+.pregunta-desplegable .fa-times {
+    display: none;
+}
+  
+.pregunta.activo .pregunta-desplegable .fa-times {
+    color: #fff;
+    display: block;
+}
+  
+.pregunta.activo .pregunta-desplegable .fa-chevron-down {
+    display: none;
+}
+  
+.pregunta.activo .pregunta-desplegable {
+    background-color: #9fa4a8;
+}
